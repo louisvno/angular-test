@@ -7,5 +7,12 @@ spotifyApp.controller('SpotifyController', function ($scope) {
     $scope.changeMessage = function () {
         $scope.message =  "Message changed!" ;
     }
+    
+    $scope.artists = [
+    {name:"Radiohead", style:"Rock"},
+    {name:"Enigma", style:"New-age"},
+    {name:"Coldplay", style:"Pop rock"}
+    ]
+    
 });
     

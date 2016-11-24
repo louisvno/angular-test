@@ -12,9 +12,20 @@
 </head>
 
 <body ng-controller="SpotifyController">
- 
+  
   <button ng-click="changeMessage()">change message</button>
   <p>{{message}}</p>
+  
+  <table>
+     <thead>
+       <th>Artist</th>
+       <th>Style</th>
+     </thead>
+    <tr ng-repeat="artist in artists">
+      <td>{{artist.name}}</td>
+      <td>{{artist.style}}</td>
+    </tr>
+  </table>
   
 </body>
   
